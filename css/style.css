@@ -1,83 +1,72 @@
-body{
-    width: 550px;
-    margin: 0;
-    padding: 30px 0 0 30px;
+body {
+    padding: 30px;
+    background-color: #f5f5f5;
+}
 
+a, a:visited, a:active, a:link, a:hover {
+    text-decoration: none;
 }
-div{
-    background-color:#F5F5F5 ;
-    padding:10px;
-}
-th  {
-    width: 100px;
-    height: 50px;
-    box-sizing: border-box;
-    background-color: #5abc83;
-    margin: 0;
-    color: white;
-}
-.menuCategories{
-    padding: 0;
-    display:none ;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    position: static;
-    left:0;
-    top;100%;
-}
-li{ width: 100px;
-    height: 50px;
-    box-sizing: border-box;
-    background-color: #5abc83;
-    margin: 0;
-    color: white;
-    list-style: none;
-    padding: 20px ;
-    border: 1px solid #458D62;
 
+.navContainer {
+    margin-bottom: 40px;
 }
-table{
-    border-spacing: 0;
+
+
+.navigation {
+    font-size: 0;
+}
+
+.navItem {
+    display: inline-block;
+    width: 200px;
+    background-color: #4c996b;
+    color: white;
+    text-align: center;
+    border: 1px solid #3F8059;
     box-sizing: border-box;
+    padding: 15px 20px;
+    font-size: 18px;
+    font-family: sans-serif;
+    font-weight: 500;
+    text-transform: capitalize;
 }
-th +th{
-    border-left: 1px solid #458D62;
+
+.navItem:hover {
+    background-color: #3f8059;
 }
-p{
-    margin-top: 20px;
+.navItemContainer:hover >.navItemContainer{
+    background-color: #3f8059;
 }
-#cate{
+
+.navItemContainer {
+    display: inline-block;
     position: relative;
 }
-li:hover{
-    background-color: #3F8059;
 
-}
-th:hover{
-    background-color: #3F8059;
-}
-#cate:hover .menuCategories{
-    display:block ;
-}
 
-.menuCategories{
+.submenu {
+    display: none;
     position: absolute;
-}
-.submenu{
-    padding: 0;
-    display:none ;
-    position: relative;
-    top:0;
-    right: 100%gir;
+    padding-inline-start: 0;
 
 }
-#wooman{
-    position: relative;
-}
-#wooman:hover{
-    background-color:#3F8059 ;
-}
-#wooman:hover >ul{
-    display:block ;
 
+.dropDownMenu{
+    top: 100%;
+    left: 0;
+}
+
+.dropRightMenu{
+    left: 100%;
+    top: 0;
+}
+
+.navItemContainer:hover > .submenu {
+    display: block;
+}
+.navItemContainer < .navItemContainer:hover{
+                             background-color: #3f8059;}
+
+.submenuItem {
+    display: list-item;
 }
